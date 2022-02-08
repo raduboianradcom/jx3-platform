@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         raduboianradcom/jx3-platform: true
+        raduboianradcom/quickstart_python: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         raduboianradcom/jx3-platform: merge
+        raduboianradcom/quickstart_python: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - raduboianradcom/jx3-platform
+        - raduboianradcom/quickstart_python
       - labels:
         - updatebot
         missingLabels:
@@ -41,7 +44,8 @@ data:
         - needs-rebase
         repos:
         - raduboianradcom/jx3-platform
-      target_url: http://lighthouse-jx./merge/status
+        - raduboianradcom/quickstart_python
+      target_url: http://lighthouse-jx.192.168.49.2.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null

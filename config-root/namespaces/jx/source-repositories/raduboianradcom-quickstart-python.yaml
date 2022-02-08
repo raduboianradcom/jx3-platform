@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: raduboianradcom
+    provider: github
+    repository: quickstart-python
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: raduboianradcom-quickstart-python
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/raduboianradcom/quickstart_python.git
+  org: raduboianradcom
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: quickstart_python
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/raduboianradcom/quickstart_python
